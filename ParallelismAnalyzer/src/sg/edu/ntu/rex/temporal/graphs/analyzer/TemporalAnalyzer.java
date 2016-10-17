@@ -452,10 +452,11 @@ public class TemporalAnalyzer {
 //		String fileName = "prosper-loans";
 //		String fileName = "slashdot-threads";
 //		String fileName = "wikipedia-growth";
+		String fileName = "flickr-growth";
 		
-//		analyzer.loadOutgoingEdges("CSV/out." + fileName, " +|\t");
-//		analyzer.writeTemporalDegree(fileName);
-//		analyzer.writeTemporalInstances(fileName, " +|\t");
+		analyzer.loadOutgoingEdgesCSV("CSV/out." + fileName, " +|\t");
+		analyzer.writeTemporalDegree(fileName);
+		analyzer.writeTemporalInstancesCSV(fileName, " +|\t");
 
 		
 		
@@ -463,12 +464,12 @@ public class TemporalAnalyzer {
 		
 		
 		// GTFS transportation
-		String fileName = "berlin";
+//		String fileName = "berlin";
 		
 //		analyzer.loadOutgoingEdgesGTFS(fileName);
 //		analyzer.writeTemporalDegree(fileName);
 		
-		analyzer.writeTemporalInstancesGTFS(fileName);
+//		analyzer.writeTemporalInstancesGTFS(fileName);
 		
 		
 		long end = System.currentTimeMillis();

@@ -8,6 +8,8 @@ public class Edge {
 	private long departure;
 	private long arrival;
 	
+	public int index;
+	
 	public Edge(Vertex from, Vertex to, long departure, long arrival) {
 		this.from = from;
 		this.to = to;
